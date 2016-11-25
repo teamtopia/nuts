@@ -89,6 +89,7 @@ case "$1" in
     reload)
 	if ! pm2 show nuts >/dev/null 2>&1; then
 	    export PORT=8010
+	    export TRUST_PROXY=loopback
 	    ret=0
 	    (
 		cd /var/lib/peerio-nuts
