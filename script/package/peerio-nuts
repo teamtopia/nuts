@@ -27,6 +27,8 @@ if test -z "$FORKS"; then
 	FORKS=2
     fi
 fi
+export PORT=8010
+export TRUST_PROXY=loopback
 
 case "$1" in
     start)
@@ -40,11 +42,10 @@ case "$1" in
 	if pm2 show nuts 2>/dev/null | grep online >/dev/null; then
 	    echo "[info] nuts already running" >&2
 	elif test -s /var/lib/peerio-nuts/bin/web.js; then
-	    export PORT=8010
 	    (
 		cd /var/lib/peerio-nuts
-		PORT=$PORT pm2 start ./bin/web.js \
-		    --name nuts -i $fork	\
+		PORT=$PORT pm2 start ./bin/web.js		\
+		    --name nuts -i $fork --update-env		\
 		    --output /var/log/peerio-server/nuts.log	\
 		    --error /var/log/peerio-server/nuts.err
 	    ) || ret=`expr $ret + 1`
@@ -88,13 +89,11 @@ case "$1" in
 	;;
     reload)
 	if ! pm2 show nuts >/dev/null 2>&1; then
-	    export PORT=8010
-	    export TRUST_PROXY=loopback
 	    ret=0
 	    (
 		cd /var/lib/peerio-nuts
-		PORT=$PORT pm2 start ./bin/web.js \
-		    --name nuts -i $fork	\
+		PORT=$PORT pm2 start ./bin/web.js		\
+		    --name nuts -i $fork --update-env		\
 		    --output /var/log/peerio-server/nuts.log	\
 		    --error /var/log/peerio-server/nuts.err
 	    ) || ret=1
@@ -103,7 +102,7 @@ case "$1" in
 	    fi
 	elif ! pm2 show nuts 2>/dev/null | grep online >/dev/null; then
 	    pm2 stop nuts
-	    pm2 start nuts
+	    pm2 start nuts --update-env
 	else
 	    pm2 gracefulReload nuts
 	fi
