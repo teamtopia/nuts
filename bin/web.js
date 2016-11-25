@@ -121,7 +121,7 @@ myNuts.init()
 
 // Start the HTTP server
 .then(function() {
-    var server = app.listen(process.env.PORT || 5000, function () {
+    var server = app.listen(process.env.PORT || 5000, process.env.NUTS_LISTEN_ADDRESS || '127.0.0.1', function () {
         var host = server.address().address;
         var port = server.address().port;
 
