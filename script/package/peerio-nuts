@@ -1,0 +1,116 @@
+#!/bin/sh
+
+if test `id -u` -eq 0; then
+   sudo -u peerioadmin $0 $@
+   exit $?
+fi
+export HOME=/var/lib/pm2
+if ! test -f $HOME/.profile; then
+    echo missing configuration >&2
+    exit 1
+fi
+. $HOME/.profile
+if test -f $HOME/.bash_profile; then
+    . $HOME/.bash_profile
+fi
+if test -d /usr/local/nodejs/bin; then
+    export PATH=/usr/local/nodejs/bin:$PATH
+fi
+
+#FIXME setup consistenty
+
+if test -z "$FORKS"; then
+    NCORES=`awk 'BEG{c=0}/^core id/{c=c+1}END{print c}' /proc/cpuinfo`
+    if test "$NCORES" -ge 2; then
+	FORKS=$NCORES
+    else
+	FORKS=2
+    fi
+fi
+
+case "$1" in
+    start)
+	ret=0
+	if ! test -s /var/lib/peerio-nuts/lib/nuts.js; then
+	    if ! rsync -avWxq --delete /usr/share/peerio-nuts /var/lib/; then
+		echo "[err] can't init working copy" >&2
+		continue
+	    fi
+	fi
+	if pm2 show nuts 2>/dev/null | grep online >/dev/null; then
+	    echo "[info] nuts already running" >&2
+	elif test -s /var/lib/peerio-nuts/bin/web.js; then
+	    export PORT=8010
+	    (
+		cd /var/lib/peerio-nuts
+		PORT=$PORT pm2 start ./bin/web.js \
+		    --name nuts -i $fork	\
+		    --output /var/log/peerio-server/nuts.log	\
+		    --error /var/log/peerio-server/nuts.err
+	    ) || ret=`expr $ret + 1`
+	else
+	    echo "[err] unknown worker nuts" >&2
+	fi
+	if test "$ret" -eq 0; then
+	    pm2 save
+	fi
+	;;
+    refresh)
+	if test -s /usr/share/peerio-nuts/lib/nuts.js -a -d /usr/share/peerio-nuts/node_modules; then
+	    if ! rsync -avWxq --delete /usr/share/peerio-nuts /var/lib/; then
+		echo "[err] can't init working copy" >&2
+		exit 1
+	    fi
+	    $0 reload
+	else
+	    echo "[err] missing source" >&2
+	    exit 1
+	fi
+	;;
+    status)
+	if ! pm2 show nuts 2>/dev/null | grep online >/dev/null; then
+	    echo "[info] no nuts running" >&2
+	    exit 1
+	else
+	    echo "[info] nuts is running"
+	fi
+	;;
+    stop)
+	if ! pm2 show nuts 2>/dev/null | grep uptime >/dev/null; then
+	    echo "[info] no nuts running" >&2
+	else
+	    pm2 delete nuts
+	fi
+	;;
+    restart)
+	$0 stop
+	$0 start
+	;;
+    reload)
+	if ! pm2 show nuts >/dev/null 2>&1; then
+	    export PORT=8010
+	    ret=0
+	    (
+		cd /var/lib/peerio-nuts
+		PORT=$PORT pm2 start ./bin/web.js \
+		    --name nuts -i $fork	\
+		    --output /var/log/peerio-server/nuts.log	\
+		    --error /var/log/peerio-server/nuts.err
+	    ) || ret=1
+	    if test "$ret" -eq 0; then
+		pm2 save
+	    fi
+	elif ! pm2 show nuts 2>/dev/null | grep online >/dev/null; then
+	    pm2 stop nuts
+	    pm2 start nuts
+	else
+	    pm2 gracefulReload nuts
+	fi
+	;;
+    *)
+	echo "unknown subcommand $1" >&2
+	exit 1
+	;;
+esac
+
+exit $?
