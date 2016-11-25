@@ -1,6 +1,6 @@
 # Deployment
 
-Nuts can be easily be deployed to a state-less server or PaaS. It only uses the disk as a cache for assets.
+Nuts can easily be deployed to a state-less server or PaaS. It only uses the disk as a cache for assets.
 
 ### On Heroku:
 
