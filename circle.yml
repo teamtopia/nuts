@@ -1,5 +1,6 @@
 machine:
   environment:
+    GITHUB_REPO: PeerioTechnologies/peerio-nuts
     NODE_ENV: production
     PORT: 8010
   node:
