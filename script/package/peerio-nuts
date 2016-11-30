@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if test `id -u` -eq 0; then
-   sudo -u peerioadmin $0 $@
-   exit $?
+    sudo -u peerioadmin $0 $@
+    exit $?
 fi
 export HOME=/var/lib/pm2
 if ! test -f $HOME/.profile; then
