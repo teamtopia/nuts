@@ -2519,9 +2519,9 @@
       "dev": true
     },
     "signal-exit": {
-      "version": "3.0.1",
+      "version": "3.0.2",
       "from": "signal-exit@>=3.0.0 <4.0.0",
-      "resolved": "./node_shrinkwrap/signal-exit-3.0.1.tgz"
+      "resolved": "./node_shrinkwrap/signal-exit-3.0.2.tgz"
     },
     "simple-fmt": {
       "version": "0.1.0",
