@@ -101,7 +101,7 @@ case "$1" in
 		pm2 save
 	    fi
 	elif ! pm2 show nuts 2>/dev/null | grep online >/dev/null; then
-	    pm2 stop nuts
+	    pm2 stop nuts || true
 	    pm2 start nuts --update-env
 	else
 	    pm2 gracefulReload nuts --update-env
