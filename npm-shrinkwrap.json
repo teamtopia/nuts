@@ -434,9 +434,9 @@
       "resolved": "./node_shrinkwrap/data-uri-to-buffer-0.0.4.tgz"
     },
     "debug": {
-      "version": "2.4.4",
+      "version": "2.4.5",
       "from": "debug@>=2.2.0 <3.0.0",
-      "resolved": "./node_shrinkwrap/debug-2.4.4.tgz"
+      "resolved": "./node_shrinkwrap/debug-2.4.5.tgz"
     },
     "decamelize": {
       "version": "1.2.0",
@@ -645,9 +645,9 @@
       }
     },
     "foreground-child": {
-      "version": "1.5.3",
+      "version": "1.5.6",
       "from": "foreground-child@>=1.3.3 <2.0.0",
-      "resolved": "./node_shrinkwrap/foreground-child-1.5.3.tgz"
+      "resolved": "./node_shrinkwrap/foreground-child-1.5.6.tgz"
     },
     "forever-agent": {
       "version": "0.6.1",
