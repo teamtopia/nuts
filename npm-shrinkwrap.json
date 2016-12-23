@@ -146,9 +146,9 @@
       }
     },
     "bluebird": {
-      "version": "3.4.6",
+      "version": "3.4.7",
       "from": "bluebird@>=3.3.1 <4.0.0",
-      "resolved": "./node_shrinkwrap/bluebird-3.4.6.tgz"
+      "resolved": "./node_shrinkwrap/bluebird-3.4.7.tgz"
     },
     "body-parser": {
       "version": "1.15.2",
