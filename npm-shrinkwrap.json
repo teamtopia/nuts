@@ -978,9 +978,9 @@
       "resolved": "./node_shrinkwrap/levn-0.3.0.tgz"
     },
     "lodash": {
-      "version": "4.17.2",
-      "from": "lodash@4.17.2",
-      "resolved": "./node_shrinkwrap/lodash-4.17.2.tgz"
+      "version": "4.17.3",
+      "from": "lodash@4.17.3",
+      "resolved": "./node_shrinkwrap/lodash-4.17.3.tgz"
     },
     "lodash._baseassign": {
       "version": "3.2.0",
