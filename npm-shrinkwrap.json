@@ -434,9 +434,9 @@
       "resolved": "./node_shrinkwrap/data-uri-to-buffer-0.0.4.tgz"
     },
     "debug": {
-      "version": "2.5.1",
+      "version": "2.5.2",
       "from": "debug@>=2.2.0 <3.0.0",
-      "resolved": "./node_shrinkwrap/debug-2.5.1.tgz"
+      "resolved": "./node_shrinkwrap/debug-2.5.2.tgz"
     },
     "decamelize": {
       "version": "1.2.0",
