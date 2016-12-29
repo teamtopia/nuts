@@ -434,9 +434,9 @@
       "resolved": "./node_shrinkwrap/data-uri-to-buffer-0.0.4.tgz"
     },
     "debug": {
-      "version": "2.5.2",
+      "version": "2.6.0",
       "from": "debug@>=2.2.0 <3.0.0",
-      "resolved": "./node_shrinkwrap/debug-2.5.2.tgz"
+      "resolved": "./node_shrinkwrap/debug-2.6.0.tgz"
     },
     "decamelize": {
       "version": "1.2.0",
@@ -601,9 +601,9 @@
       "resolved": "./node_shrinkwrap/extsprintf-1.0.2.tgz"
     },
     "fast-levenshtein": {
-      "version": "2.0.5",
+      "version": "2.0.6",
       "from": "fast-levenshtein@>=2.0.4 <2.1.0",
-      "resolved": "./node_shrinkwrap/fast-levenshtein-2.0.5.tgz"
+      "resolved": "./node_shrinkwrap/fast-levenshtein-2.0.6.tgz"
     },
     "feed": {
       "version": "0.3.0",
