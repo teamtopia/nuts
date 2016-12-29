@@ -11,6 +11,14 @@ var apiAuth =  {
     password: process.env.API_PASSWORD
 };
 
+if (process.env.AIRBRAKE_ID && process.env.AIRBRAKE_KEY) {
+    if (process.env.AIRBRAKE_HOST) {
+	process.env.AIRBRAKE_SERVER = process.env.AIRBRAKE_HOST;
+    }
+    var airbrake = require('airbrake').createClient(process.env.AIRBRAKE_ID, process.env.AIRBRAKE_KEY);
+    airbrake.handleExceptions();
+}
+
 var analytics = undefined;
 var downloadEvent = process.env.ANALYTICS_EVENT_DOWNLOAD || 'download';
 if (process.env.ANALYTICS_TOKEN) {
