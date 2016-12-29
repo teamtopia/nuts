@@ -6,6 +6,7 @@
   "homepage": "https://github.com/PeerioTechnologies/peerio-nuts",
   "license": "Apache-2.0",
   "dependencies": {
+    "airbrake": "1.2.0",
     "analytics-node": "2.1.0",
     "basic-auth": "1.1.0",
     "body-parser": "1.15.2",
