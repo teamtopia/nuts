@@ -156,31 +156,9 @@
       "resolved": "./node_shrinkwrap/bluebird-3.4.7.tgz"
     },
     "body-parser": {
-      "version": "1.15.2",
-      "from": "body-parser@1.15.2",
-      "resolved": "./node_shrinkwrap/body-parser-1.15.2.tgz",
-      "dependencies": {
-        "debug": {
-          "version": "2.2.0",
-          "from": "debug@>=2.2.0 <2.3.0",
-          "resolved": "./node_shrinkwrap/debug-2.2.0.tgz"
-        },
-        "iconv-lite": {
-          "version": "0.4.13",
-          "from": "iconv-lite@0.4.13",
-          "resolved": "./node_shrinkwrap/iconv-lite-0.4.13.tgz"
-        },
-        "ms": {
-          "version": "0.7.1",
-          "from": "ms@0.7.1",
-          "resolved": "./node_shrinkwrap/ms-0.7.1.tgz"
-        },
-        "qs": {
-          "version": "6.2.0",
-          "from": "qs@6.2.0",
-          "resolved": "./node_shrinkwrap/qs-6.2.0.tgz"
-        }
-      }
+      "version": "1.16.0",
+      "from": "body-parser@1.16.0",
+      "resolved": "./node_shrinkwrap/body-parser-1.16.0.tgz"
     },
     "boom": {
       "version": "2.10.1",
@@ -607,9 +585,9 @@
       "resolved": "./node_shrinkwrap/fast-levenshtein-2.0.6.tgz"
     },
     "feed": {
-      "version": "0.3.0",
+      "version": "0.3.1",
       "from": "feed@>=0.3.0 <0.4.0",
-      "resolved": "./node_shrinkwrap/feed-0.3.0.tgz"
+      "resolved": "./node_shrinkwrap/feed-0.3.1.tgz"
     },
     "file-uri-to-path": {
       "version": "0.0.2",
@@ -788,7 +766,7 @@
     },
     "http-errors": {
       "version": "1.5.1",
-      "from": "http-errors@>=1.5.0 <1.6.0",
+      "from": "http-errors@>=1.5.1 <1.6.0",
       "resolved": "./node_shrinkwrap/http-errors-1.5.1.tgz"
     },
     "http-proxy-agent": {
@@ -2345,16 +2323,9 @@
       "resolved": "./node_shrinkwrap/range-parser-1.2.0.tgz"
     },
     "raw-body": {
-      "version": "2.1.7",
-      "from": "raw-body@>=2.1.7 <2.2.0",
-      "resolved": "./node_shrinkwrap/raw-body-2.1.7.tgz",
-      "dependencies": {
-        "iconv-lite": {
-          "version": "0.4.13",
-          "from": "iconv-lite@0.4.13",
-          "resolved": "./node_shrinkwrap/iconv-lite-0.4.13.tgz"
-        }
-      }
+      "version": "2.2.0",
+      "from": "raw-body@>=2.2.0 <2.3.0",
+      "resolved": "./node_shrinkwrap/raw-body-2.2.0.tgz"
     },
     "readable-stream": {
       "version": "2.0.6",
@@ -2802,7 +2773,7 @@
     },
     "type-is": {
       "version": "1.6.14",
-      "from": "type-is@>=1.6.13 <1.7.0",
+      "from": "type-is@>=1.6.14 <1.7.0",
       "resolved": "./node_shrinkwrap/type-is-1.6.14.tgz"
     },
     "understudy": {
