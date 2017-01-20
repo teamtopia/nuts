@@ -105,9 +105,9 @@
       "resolved": "./node_shrinkwrap/ast-traverse-0.1.1.tgz"
     },
     "ast-types": {
-      "version": "0.9.3",
+      "version": "0.9.4",
       "from": "ast-types@>=0.0.0 <1.0.0",
-      "resolved": "./node_shrinkwrap/ast-types-0.9.3.tgz"
+      "resolved": "./node_shrinkwrap/ast-types-0.9.4.tgz"
     },
     "async": {
       "version": "2.1.4",
@@ -264,15 +264,10 @@
       "from": "commoner@>=0.10.3 <0.11.0",
       "resolved": "./node_shrinkwrap/commoner-0.10.8.tgz",
       "dependencies": {
-        "ast-types": {
-          "version": "0.9.2",
-          "from": "ast-types@0.9.2",
-          "resolved": "./node_shrinkwrap/ast-types-0.9.2.tgz"
-        },
         "recast": {
-          "version": "0.11.18",
+          "version": "0.11.20",
           "from": "recast@>=0.11.17 <0.12.0",
-          "resolved": "./node_shrinkwrap/recast-0.11.18.tgz"
+          "resolved": "./node_shrinkwrap/recast-0.11.20.tgz"
         },
         "source-map": {
           "version": "0.5.6",
