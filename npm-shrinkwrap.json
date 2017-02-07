@@ -99,9 +99,9 @@
       "resolved": "./node_shrinkwrap/ast-traverse-0.1.1.tgz"
     },
     "ast-types": {
-      "version": "0.9.4",
+      "version": "0.9.5",
       "from": "ast-types@>=0.0.0 <1.0.0",
-      "resolved": "./node_shrinkwrap/ast-types-0.9.4.tgz"
+      "resolved": "./node_shrinkwrap/ast-types-0.9.5.tgz"
     },
     "async": {
       "version": "2.1.4",
@@ -247,9 +247,9 @@
       "resolved": "./node_shrinkwrap/commoner-0.10.8.tgz",
       "dependencies": {
         "recast": {
-          "version": "0.11.20",
+          "version": "0.11.21",
           "from": "recast@>=0.11.17 <0.12.0",
-          "resolved": "./node_shrinkwrap/recast-0.11.20.tgz"
+          "resolved": "./node_shrinkwrap/recast-0.11.21.tgz"
         },
         "source-map": {
           "version": "0.5.6",
@@ -304,19 +304,14 @@
       "resolved": "./node_shrinkwrap/core-util-is-1.0.2.tgz"
     },
     "coveralls": {
-      "version": "2.11.15",
+      "version": "2.11.16",
       "from": "coveralls@>=2.11.2 <3.0.0",
-      "resolved": "./node_shrinkwrap/coveralls-2.11.15.tgz",
+      "resolved": "./node_shrinkwrap/coveralls-2.11.16.tgz",
       "dependencies": {
         "esprima": {
           "version": "2.7.3",
           "from": "esprima@>=2.6.0 <3.0.0",
           "resolved": "./node_shrinkwrap/esprima-2.7.3.tgz"
-        },
-        "form-data": {
-          "version": "2.0.0",
-          "from": "form-data@>=2.0.0 <2.1.0",
-          "resolved": "./node_shrinkwrap/form-data-2.0.0.tgz"
         },
         "js-yaml": {
           "version": "3.6.1",
@@ -327,16 +322,6 @@
           "version": "1.2.0",
           "from": "minimist@1.2.0",
           "resolved": "./node_shrinkwrap/minimist-1.2.0.tgz"
-        },
-        "node-uuid": {
-          "version": "1.4.7",
-          "from": "node-uuid@~1.4.7",
-          "resolved": "./node_shrinkwrap/node-uuid-1.4.7.tgz"
-        },
-        "request": {
-          "version": "2.75.0",
-          "from": "request@2.75.0",
-          "resolved": "./node_shrinkwrap/request-2.75.0.tgz"
         }
       }
     },
@@ -831,16 +816,9 @@
       "resolved": "./node_shrinkwrap/js-base64-2.1.9.tgz"
     },
     "js-yaml": {
-      "version": "3.7.0",
+      "version": "3.8.1",
       "from": "js-yaml@>=3.3.1 <4.0.0",
-      "resolved": "./node_shrinkwrap/js-yaml-3.7.0.tgz",
-      "dependencies": {
-        "esprima": {
-          "version": "2.7.3",
-          "from": "esprima@>=2.6.0 <3.0.0",
-          "resolved": "./node_shrinkwrap/esprima-2.7.3.tgz"
-        }
-      }
+      "resolved": "./node_shrinkwrap/js-yaml-3.8.1.tgz"
     },
     "json-schema": {
       "version": "0.2.3",
@@ -2162,9 +2140,9 @@
       "resolved": "./node_shrinkwrap/prelude-ls-1.1.2.tgz"
     },
     "private": {
-      "version": "0.1.6",
+      "version": "0.1.7",
       "from": "private@>=0.1.5 <0.2.0",
-      "resolved": "./node_shrinkwrap/private-0.1.6.tgz"
+      "resolved": "./node_shrinkwrap/private-0.1.7.tgz"
     },
     "process-nextick-args": {
       "version": "1.0.7",
@@ -2351,9 +2329,9 @@
       "dev": true
     },
     "should-format": {
-      "version": "3.0.2",
+      "version": "3.0.3",
       "from": "should-format@>=3.0.2 <4.0.0",
-      "resolved": "./node_shrinkwrap/should-format-3.0.2.tgz",
+      "resolved": "./node_shrinkwrap/should-format-3.0.3.tgz",
       "dev": true
     },
     "should-type": {
