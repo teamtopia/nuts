@@ -144,9 +144,9 @@
       "resolved": "./node_shrinkwrap/bluebird-3.4.7.tgz"
     },
     "body-parser": {
-      "version": "1.16.0",
-      "from": "body-parser@1.16.0",
-      "resolved": "./node_shrinkwrap/body-parser-1.16.0.tgz"
+      "version": "1.16.1",
+      "from": "body-parser@1.16.1",
+      "resolved": "./node_shrinkwrap/body-parser-1.16.1.tgz"
     },
     "boom": {
       "version": "2.10.1",
@@ -375,9 +375,9 @@
       "resolved": "./node_shrinkwrap/data-uri-to-buffer-0.0.4.tgz"
     },
     "debug": {
-      "version": "2.6.0",
+      "version": "2.6.1",
       "from": "debug@>=2.2.0 <3.0.0",
-      "resolved": "./node_shrinkwrap/debug-2.6.0.tgz"
+      "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
     },
     "decamelize": {
       "version": "1.2.0",
