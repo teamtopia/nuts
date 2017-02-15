@@ -2063,9 +2063,9 @@
       "resolved": "./node_shrinkwrap/only-shallow-1.2.0.tgz"
     },
     "opener": {
-      "version": "1.4.2",
+      "version": "1.4.3",
       "from": "opener@>=1.4.1 <2.0.0",
-      "resolved": "./node_shrinkwrap/opener-1.4.2.tgz"
+      "resolved": "./node_shrinkwrap/opener-1.4.3.tgz"
     },
     "optionator": {
       "version": "0.8.2",
