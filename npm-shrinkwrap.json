@@ -146,7 +146,14 @@
     "body-parser": {
       "version": "1.16.1",
       "from": "body-parser@1.16.1",
-      "resolved": "./node_shrinkwrap/body-parser-1.16.1.tgz"
+      "resolved": "./node_shrinkwrap/body-parser-1.16.1.tgz",
+      "dependencies": {
+        "qs": {
+          "version": "6.2.1",
+          "from": "qs@6.2.1",
+          "resolved": "./node_shrinkwrap/qs-6.2.1.tgz"
+        }
+      }
     },
     "boom": {
       "version": "2.10.1",
@@ -247,9 +254,9 @@
       "resolved": "./node_shrinkwrap/commoner-0.10.8.tgz",
       "dependencies": {
         "recast": {
-          "version": "0.11.21",
+          "version": "0.11.22",
           "from": "recast@>=0.11.17 <0.12.0",
-          "resolved": "./node_shrinkwrap/recast-0.11.21.tgz"
+          "resolved": "./node_shrinkwrap/recast-0.11.22.tgz"
         },
         "source-map": {
           "version": "0.5.6",
@@ -2180,9 +2187,9 @@
       "resolved": "./node_shrinkwrap/q-1.4.1.tgz"
     },
     "qs": {
-      "version": "6.2.1",
+      "version": "6.2.2",
       "from": "qs@>=6.2.0 <6.3.0",
-      "resolved": "./node_shrinkwrap/qs-6.2.1.tgz"
+      "resolved": "./node_shrinkwrap/qs-6.2.2.tgz"
     },
     "range-parser": {
       "version": "1.2.0",
@@ -2259,9 +2266,9 @@
           "resolved": "./node_shrinkwrap/form-data-2.1.2.tgz"
         },
         "qs": {
-          "version": "6.3.0",
+          "version": "6.3.1",
           "from": "qs@>=6.3.0 <6.4.0",
-          "resolved": "./node_shrinkwrap/qs-6.3.0.tgz"
+          "resolved": "./node_shrinkwrap/qs-6.3.1.tgz"
         }
       }
     },
