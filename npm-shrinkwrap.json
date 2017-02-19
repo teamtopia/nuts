@@ -104,9 +104,9 @@
       "resolved": "./node_shrinkwrap/ast-types-0.9.5.tgz"
     },
     "async": {
-      "version": "2.1.4",
+      "version": "2.1.5",
       "from": "async@>=2.0.1 <3.0.0",
-      "resolved": "./node_shrinkwrap/async-2.1.4.tgz"
+      "resolved": "./node_shrinkwrap/async-2.1.5.tgz"
     },
     "asynckit": {
       "version": "0.4.0",
