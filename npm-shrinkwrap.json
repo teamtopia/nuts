@@ -783,9 +783,9 @@
       "resolved": "./node_shrinkwrap/is-buffer-1.1.4.tgz"
     },
     "is-my-json-valid": {
-      "version": "2.15.0",
+      "version": "2.16.0",
       "from": "is-my-json-valid@>=2.12.4 <3.0.0",
-      "resolved": "./node_shrinkwrap/is-my-json-valid-2.15.0.tgz"
+      "resolved": "./node_shrinkwrap/is-my-json-valid-2.16.0.tgz"
     },
     "is-property": {
       "version": "1.0.2",
