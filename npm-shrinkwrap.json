@@ -439,9 +439,9 @@
       "resolved": "./node_shrinkwrap/destroy-1.0.4.tgz"
     },
     "detective": {
-      "version": "4.4.0",
+      "version": "4.5.0",
       "from": "detective@>=4.3.1 <5.0.0",
-      "resolved": "./node_shrinkwrap/detective-4.4.0.tgz"
+      "resolved": "./node_shrinkwrap/detective-4.5.0.tgz"
     },
     "diff": {
       "version": "1.4.0",
@@ -507,7 +507,7 @@
     },
     "express": {
       "version": "4.15.0",
-      "from": "express@>=4.14.1 <5.0.0",
+      "from": "express@>=4.15.0 <5.0.0",
       "resolved": "./node_shrinkwrap/express-4.15.0.tgz",
       "dependencies": {
         "qs": {
