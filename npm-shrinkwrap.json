@@ -801,9 +801,9 @@
       "resolved": "./node_shrinkwrap/js-base64-2.1.9.tgz"
     },
     "js-yaml": {
-      "version": "3.8.1",
+      "version": "3.8.2",
       "from": "js-yaml@>=3.3.1 <4.0.0",
-      "resolved": "./node_shrinkwrap/js-yaml-3.8.1.tgz"
+      "resolved": "./node_shrinkwrap/js-yaml-3.8.2.tgz"
     },
     "json-schema": {
       "version": "0.2.3",
