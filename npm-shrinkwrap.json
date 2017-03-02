@@ -2374,9 +2374,9 @@
       "resolved": "./node_shrinkwrap/sprintf-js-1.0.3.tgz"
     },
     "sshpk": {
-      "version": "1.10.2",
+      "version": "1.11.0",
       "from": "sshpk@>=1.7.0 <2.0.0",
-      "resolved": "./node_shrinkwrap/sshpk-1.10.2.tgz",
+      "resolved": "./node_shrinkwrap/sshpk-1.11.0.tgz",
       "dependencies": {
         "assert-plus": {
           "version": "1.0.0",
