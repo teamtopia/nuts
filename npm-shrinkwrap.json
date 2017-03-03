@@ -139,9 +139,9 @@
       "resolved": "./node_shrinkwrap/bl-1.1.2.tgz"
     },
     "bluebird": {
-      "version": "3.4.7",
+      "version": "3.5.0",
       "from": "bluebird@>=3.3.1 <4.0.0",
-      "resolved": "./node_shrinkwrap/bluebird-3.4.7.tgz"
+      "resolved": "./node_shrinkwrap/bluebird-3.5.0.tgz"
     },
     "body-parser": {
       "version": "1.17.0",
