@@ -42,9 +42,9 @@
       }
     },
     "ajv": {
-      "version": "4.11.3",
+      "version": "4.11.4",
       "from": "ajv@>=4.9.1 <5.0.0",
-      "resolved": "./node_shrinkwrap/ajv-4.11.3.tgz",
+      "resolved": "./node_shrinkwrap/ajv-4.11.4.tgz",
       "dependencies": {
         "co": {
           "version": "4.6.0",
@@ -323,9 +323,9 @@
       "resolved": "./node_shrinkwrap/core-util-is-1.0.2.tgz"
     },
     "coveralls": {
-      "version": "2.11.16",
+      "version": "2.12.0",
       "from": "coveralls@>=2.11.2 <3.0.0",
-      "resolved": "./node_shrinkwrap/coveralls-2.11.16.tgz",
+      "resolved": "./node_shrinkwrap/coveralls-2.12.0.tgz",
       "dependencies": {
         "esprima": {
           "version": "2.7.3",
@@ -348,9 +348,9 @@
           "resolved": "./node_shrinkwrap/minimist-1.2.0.tgz"
         },
         "qs": {
-          "version": "6.3.1",
+          "version": "6.3.2",
           "from": "qs@>=6.3.0 <6.4.0",
-          "resolved": "./node_shrinkwrap/qs-6.3.1.tgz"
+          "resolved": "./node_shrinkwrap/qs-6.3.2.tgz"
         },
         "request": {
           "version": "2.79.0",
@@ -533,14 +533,14 @@
       "resolved": "./node_shrinkwrap/events-to-array-1.0.2.tgz"
     },
     "express": {
-      "version": "4.15.0",
+      "version": "4.15.2",
       "from": "express@>=4.15.0 <5.0.0",
-      "resolved": "./node_shrinkwrap/express-4.15.0.tgz",
+      "resolved": "./node_shrinkwrap/express-4.15.2.tgz",
       "dependencies": {
         "qs": {
-          "version": "6.3.1",
-          "from": "qs@6.3.1",
-          "resolved": "./node_shrinkwrap/qs-6.3.1.tgz"
+          "version": "6.4.0",
+          "from": "qs@6.4.0",
+          "resolved": "./node_shrinkwrap/qs-6.4.0.tgz"
         }
       }
     },
@@ -2212,9 +2212,9 @@
       "resolved": "./node_shrinkwrap/q-1.4.1.tgz"
     },
     "qs": {
-      "version": "6.2.2",
+      "version": "6.2.3",
       "from": "qs@>=6.2.0 <6.3.0",
-      "resolved": "./node_shrinkwrap/qs-6.2.2.tgz"
+      "resolved": "./node_shrinkwrap/qs-6.2.3.tgz"
     },
     "range-parser": {
       "version": "1.2.0",
@@ -2296,14 +2296,14 @@
           "resolved": "./node_shrinkwrap/form-data-2.1.2.tgz"
         },
         "har-validator": {
-          "version": "4.2.0",
+          "version": "4.2.1",
           "from": "har-validator@>=4.2.0 <4.3.0",
-          "resolved": "./node_shrinkwrap/har-validator-4.2.0.tgz"
+          "resolved": "./node_shrinkwrap/har-validator-4.2.1.tgz"
         },
         "qs": {
-          "version": "6.3.1",
+          "version": "6.3.2",
           "from": "qs@>=6.3.0 <6.4.0",
-          "resolved": "./node_shrinkwrap/qs-6.3.1.tgz"
+          "resolved": "./node_shrinkwrap/qs-6.3.2.tgz"
         }
       }
     },
@@ -2330,14 +2330,14 @@
       "resolved": "./node_shrinkwrap/semver-5.3.0.tgz"
     },
     "send": {
-      "version": "0.15.0",
-      "from": "send@0.15.0",
-      "resolved": "./node_shrinkwrap/send-0.15.0.tgz"
+      "version": "0.15.1",
+      "from": "send@0.15.1",
+      "resolved": "./node_shrinkwrap/send-0.15.1.tgz"
     },
     "serve-static": {
-      "version": "1.12.0",
-      "from": "serve-static@1.12.0",
-      "resolved": "./node_shrinkwrap/serve-static-1.12.0.tgz"
+      "version": "1.12.1",
+      "from": "serve-static@1.12.1",
+      "resolved": "./node_shrinkwrap/serve-static-1.12.1.tgz"
     },
     "setprototypeof": {
       "version": "1.0.3",
