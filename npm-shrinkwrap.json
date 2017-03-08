@@ -534,7 +534,7 @@
     },
     "express": {
       "version": "4.15.2",
-      "from": "express@>=4.15.0 <5.0.0",
+      "from": "express@>=4.15.2 <5.0.0",
       "resolved": "./node_shrinkwrap/express-4.15.2.tgz",
       "dependencies": {
         "qs": {
