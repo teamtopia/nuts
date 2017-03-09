@@ -2345,9 +2345,9 @@
       "resolved": "./node_shrinkwrap/setprototypeof-1.0.3.tgz"
     },
     "should": {
-      "version": "11.2.0",
+      "version": "11.2.1",
       "from": "should@latest",
-      "resolved": "./node_shrinkwrap/should-11.2.0.tgz",
+      "resolved": "./node_shrinkwrap/should-11.2.1.tgz",
       "dev": true
     },
     "should-equal": {
