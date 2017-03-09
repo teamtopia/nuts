@@ -2281,9 +2281,9 @@
       "resolved": "./node_shrinkwrap/repeat-string-1.6.1.tgz"
     },
     "request": {
-      "version": "2.80.0",
-      "from": "request@2.80.0",
-      "resolved": "./node_shrinkwrap/request-2.80.0.tgz",
+      "version": "2.81.0",
+      "from": "request@2.81.0",
+      "resolved": "./node_shrinkwrap/request-2.81.0.tgz",
       "dependencies": {
         "caseless": {
           "version": "0.12.0",
@@ -2297,13 +2297,18 @@
         },
         "har-validator": {
           "version": "4.2.1",
-          "from": "har-validator@>=4.2.0 <4.3.0",
+          "from": "har-validator@>=4.2.1 <4.3.0",
           "resolved": "./node_shrinkwrap/har-validator-4.2.1.tgz"
         },
         "qs": {
-          "version": "6.3.2",
-          "from": "qs@>=6.3.0 <6.4.0",
-          "resolved": "./node_shrinkwrap/qs-6.3.2.tgz"
+          "version": "6.4.0",
+          "from": "qs@>=6.4.0 <6.5.0",
+          "resolved": "./node_shrinkwrap/qs-6.4.0.tgz"
+        },
+        "tunnel-agent": {
+          "version": "0.6.0",
+          "from": "tunnel-agent@>=0.6.0 <0.7.0",
+          "resolved": "./node_shrinkwrap/tunnel-agent-0.6.0.tgz"
         }
       }
     },
@@ -2323,6 +2328,11 @@
           "resolved": "./node_shrinkwrap/glob-7.1.1.tgz"
         }
       }
+    },
+    "safe-buffer": {
+      "version": "5.0.1",
+      "from": "safe-buffer@>=5.0.1 <6.0.0",
+      "resolved": "./node_shrinkwrap/safe-buffer-5.0.1.tgz"
     },
     "semver": {
       "version": "5.3.0",
