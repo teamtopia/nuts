@@ -30,9 +30,9 @@
       "resolved": "./node_shrinkwrap/airbrake-1.2.2.tgz"
     },
     "ajv": {
-      "version": "4.11.4",
+      "version": "4.11.5",
       "from": "ajv@>=4.9.1 <5.0.0",
-      "resolved": "./node_shrinkwrap/ajv-4.11.4.tgz"
+      "resolved": "./node_shrinkwrap/ajv-4.11.5.tgz"
     },
     "align-text": {
       "version": "0.1.4",
@@ -92,9 +92,9 @@
       "resolved": "./node_shrinkwrap/ast-traverse-0.1.1.tgz"
     },
     "ast-types": {
-      "version": "0.9.5",
+      "version": "0.9.6",
       "from": "ast-types@>=0.0.0 <1.0.0",
-      "resolved": "./node_shrinkwrap/ast-types-0.9.5.tgz"
+      "resolved": "./node_shrinkwrap/ast-types-0.9.6.tgz"
     },
     "async": {
       "version": "1.5.2",
@@ -153,6 +153,11 @@
       "from": "body-parser@1.17.0",
       "resolved": "./node_shrinkwrap/body-parser-1.17.0.tgz",
       "dependencies": {
+        "debug": {
+          "version": "2.6.1",
+          "from": "debug@2.6.1",
+          "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
+        },
         "qs": {
           "version": "6.3.1",
           "from": "qs@6.3.1",
@@ -264,9 +269,9 @@
       "resolved": "./node_shrinkwrap/commoner-0.10.8.tgz",
       "dependencies": {
         "recast": {
-          "version": "0.11.22",
+          "version": "0.11.23",
           "from": "recast@>=0.11.17 <0.12.0",
-          "resolved": "./node_shrinkwrap/recast-0.11.22.tgz"
+          "resolved": "./node_shrinkwrap/recast-0.11.23.tgz"
         },
         "source-map": {
           "version": "0.5.6",
@@ -417,9 +422,9 @@
       "resolved": "./node_shrinkwrap/data-uri-to-buffer-0.0.4.tgz"
     },
     "debug": {
-      "version": "2.6.1",
+      "version": "2.6.3",
       "from": "debug@>=2.2.0 <3.0.0",
-      "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
+      "resolved": "./node_shrinkwrap/debug-2.6.3.tgz"
     },
     "decamelize": {
       "version": "1.2.0",
@@ -543,7 +548,14 @@
     "express": {
       "version": "4.15.2",
       "from": "express@>=4.15.2 <5.0.0",
-      "resolved": "./node_shrinkwrap/express-4.15.2.tgz"
+      "resolved": "./node_shrinkwrap/express-4.15.2.tgz",
+      "dependencies": {
+        "debug": {
+          "version": "2.6.1",
+          "from": "debug@2.6.1",
+          "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
+        }
+      }
     },
     "express-useragent": {
       "version": "1.0.4",
@@ -578,7 +590,14 @@
     "finalhandler": {
       "version": "1.0.0",
       "from": "finalhandler@>=1.0.0 <1.1.0",
-      "resolved": "./node_shrinkwrap/finalhandler-1.0.0.tgz"
+      "resolved": "./node_shrinkwrap/finalhandler-1.0.0.tgz",
+      "dependencies": {
+        "debug": {
+          "version": "2.6.1",
+          "from": "debug@2.6.1",
+          "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
+        }
+      }
     },
     "finished": {
       "version": "1.2.2",
@@ -796,9 +815,9 @@
       "resolved": "./node_shrinkwrap/ipaddr.js-1.2.0.tgz"
     },
     "is-buffer": {
-      "version": "1.1.4",
+      "version": "1.1.5",
       "from": "is-buffer@>=1.0.2 <2.0.0",
-      "resolved": "./node_shrinkwrap/is-buffer-1.1.4.tgz"
+      "resolved": "./node_shrinkwrap/is-buffer-1.1.5.tgz"
     },
     "is-my-json-valid": {
       "version": "2.16.0",
@@ -882,9 +901,16 @@
       "resolved": "./node_shrinkwrap/jsonpointer-4.0.1.tgz"
     },
     "jsprim": {
-      "version": "1.3.1",
+      "version": "1.4.0",
       "from": "jsprim@>=1.2.2 <2.0.0",
-      "resolved": "./node_shrinkwrap/jsprim-1.3.1.tgz"
+      "resolved": "./node_shrinkwrap/jsprim-1.4.0.tgz",
+      "dependencies": {
+        "assert-plus": {
+          "version": "1.0.0",
+          "from": "assert-plus@1.0.0",
+          "resolved": "./node_shrinkwrap/assert-plus-1.0.0.tgz"
+        }
+      }
     },
     "kind-of": {
       "version": "3.1.0",
@@ -2379,7 +2405,14 @@
     "send": {
       "version": "0.15.1",
       "from": "send@0.15.1",
-      "resolved": "./node_shrinkwrap/send-0.15.1.tgz"
+      "resolved": "./node_shrinkwrap/send-0.15.1.tgz",
+      "dependencies": {
+        "debug": {
+          "version": "2.6.1",
+          "from": "debug@2.6.1",
+          "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
+        }
+      }
     },
     "serve-static": {
       "version": "1.12.1",
@@ -2779,9 +2812,9 @@
       "resolved": "./node_shrinkwrap/y18n-3.2.1.tgz"
     },
     "yallist": {
-      "version": "2.0.0",
+      "version": "2.1.2",
       "from": "yallist@>=2.0.0 <3.0.0",
-      "resolved": "./node_shrinkwrap/yallist-2.0.0.tgz"
+      "resolved": "./node_shrinkwrap/yallist-2.1.2.tgz"
     },
     "yargs": {
       "version": "3.27.0",
