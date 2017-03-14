@@ -689,9 +689,9 @@
           "resolved": "./node_shrinkwrap/isarray-1.0.0.tgz"
         },
         "readable-stream": {
-          "version": "2.2.3",
+          "version": "2.2.5",
           "from": "readable-stream@>=2.0.0 <3.0.0",
-          "resolved": "./node_shrinkwrap/readable-stream-2.2.3.tgz"
+          "resolved": "./node_shrinkwrap/readable-stream-2.2.5.tgz"
         }
       }
     },
@@ -2640,9 +2640,9 @@
           "resolved": "./node_shrinkwrap/isarray-1.0.0.tgz"
         },
         "readable-stream": {
-          "version": "2.2.3",
+          "version": "2.2.5",
           "from": "readable-stream@>=2.0.2 <3.0.0",
-          "resolved": "./node_shrinkwrap/readable-stream-2.2.3.tgz"
+          "resolved": "./node_shrinkwrap/readable-stream-2.2.5.tgz"
         }
       }
     },
