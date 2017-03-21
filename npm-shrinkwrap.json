@@ -149,19 +149,14 @@
       "resolved": "./node_shrinkwrap/bluebird-3.5.0.tgz"
     },
     "body-parser": {
-      "version": "1.17.0",
-      "from": "body-parser@1.17.0",
-      "resolved": "./node_shrinkwrap/body-parser-1.17.0.tgz",
+      "version": "1.17.1",
+      "from": "body-parser@1.17.1",
+      "resolved": "./node_shrinkwrap/body-parser-1.17.1.tgz",
       "dependencies": {
         "debug": {
           "version": "2.6.1",
           "from": "debug@2.6.1",
           "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
-        },
-        "qs": {
-          "version": "6.3.1",
-          "from": "qs@6.3.1",
-          "resolved": "./node_shrinkwrap/qs-6.3.1.tgz"
         }
       }
     },

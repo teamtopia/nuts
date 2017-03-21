@@ -9,7 +9,7 @@
     "airbrake": "1.2.2",
     "analytics-node": "2.1.0",
     "basic-auth": "1.1.0",
-    "body-parser": "1.17.0",
+    "body-parser": "1.17.1",
     "destroy": "1.0.4",
     "express": "^4.15.2",
     "express-useragent": "1.0.4",
