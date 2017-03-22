@@ -588,16 +588,9 @@
       "resolved": "./node_shrinkwrap/file-uri-to-path-0.0.2.tgz"
     },
     "finalhandler": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "from": "finalhandler@>=1.0.0 <1.1.0",
-      "resolved": "./node_shrinkwrap/finalhandler-1.0.0.tgz",
-      "dependencies": {
-        "debug": {
-          "version": "2.6.1",
-          "from": "debug@2.6.1",
-          "resolved": "./node_shrinkwrap/debug-2.6.1.tgz"
-        }
-      }
+      "resolved": "./node_shrinkwrap/finalhandler-1.0.1.tgz"
     },
     "finished": {
       "version": "1.2.2",
@@ -2131,9 +2124,14 @@
           "resolved": "./node_shrinkwrap/mime-types-2.1.4.tgz"
         },
         "node-uuid": {
-          "version": "1.4.7",
+          "version": "1.4.8",
           "from": "node-uuid@>=1.4.0 <1.5.0",
-          "resolved": "./node_shrinkwrap/node-uuid-1.4.7.tgz"
+          "resolved": "./node_shrinkwrap/node-uuid-1.4.8.tgz"
+        },
+        "q": {
+          "version": "1.4.1",
+          "from": "q@1.4.1",
+          "resolved": "./node_shrinkwrap/q-1.4.1.tgz"
         },
         "qs": {
           "version": "5.1.0",
@@ -2297,9 +2295,9 @@
       "resolved": "./node_shrinkwrap/punycode-1.4.1.tgz"
     },
     "q": {
-      "version": "1.4.1",
-      "from": "q@1.4.1",
-      "resolved": "./node_shrinkwrap/q-1.4.1.tgz"
+      "version": "1.5.0",
+      "from": "q@1.5.0",
+      "resolved": "./node_shrinkwrap/q-1.5.0.tgz"
     },
     "qs": {
       "version": "6.4.0",
