@@ -21,7 +21,7 @@
     "request": "2.81.0",
     "semver": "7.3.2",
     "stream-res": "1.0.1",
-    "strip-bom": "3.0.0",
+    "strip-bom": "4.0.0",
     "understudy": "4.1.0",
     "urljoin.js": "0.1.0",
     "uuid": "8.0.0"
