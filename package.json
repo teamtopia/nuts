@@ -24,7 +24,7 @@
     "strip-bom": "3.0.0",
     "understudy": "4.1.0",
     "urljoin.js": "0.1.0",
-    "uuid": "3.0.0"
+    "uuid": "8.0.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
