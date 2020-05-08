@@ -1,4 +1,5 @@
 const express = require('express');
+const app = express();
 const uuid = require('uuid');
 const basicAuth = require('basic-auth');
 const Analytics = require('analytics-node');
@@ -6,7 +7,24 @@ const nuts = require('../');
 const dotenv = require('dotenv');
 dotenv.config();
 
-var app = express();
+var fs = require('fs');
+var https = require('https');
+const http = require('http');
+
+var server = null;
+
+if (process.env.NODE_ENV !== 'production') {
+    server = http.createServer({}, app);
+}
+else {
+    server = https.createServer({
+        key: fs.readFileSync(process.env.HTTPS_KEY, 'utf8'),
+        cert: fs.readFileSync(process.env.HTTPS_CERT, 'utf8'),
+        ca: fs.readFileSync(process.env.HTTPS_CA, 'utf8'),
+        requestCert: true,
+        rejectUnauthorized: false
+    }, app);
+}
 
 var apiAuth = {
     username: process.env.API_USERNAME,
@@ -128,14 +146,15 @@ app.use(function (err, req, res, next) {
 
 myNuts.init()
 
-//Start the HTTP server
+    //Start the HTTP server
     .then(function () {
-        var server = app.listen(process.env.PORT || 5000, process.env.NUTS_LISTEN_ADDRESS || '127.0.0.1', function () {
+        server.listen(process.env.PORT || 5000, () => {
             var host = server.address().address;
             var port = server.address().port;
 
-            console.log('Listening at http://%s:%s', host, port);
+            console.log('Listening at http(s)://%s:%s', host, port);
         });
+
     }, function (err) {
         console.log(err.stack || err);
         process.exit(1);
