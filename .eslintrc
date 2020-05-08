@@ -1,18 +1,37 @@
 {
-    "rules": {
-        "indent": [ 2, 4 ],
-        "quotes": [ 2, "single" ],
-        "linebreak-style": [ 2, "unix" ],
-        "semi": [ 2, "always" ],
-        "no-unused-vars": [ 2, {
-            "vars": "all",
-            "args": "none"
-        } ],
-        "spaced-comment": [ 2, "always" ]
-    },
-    "env": {
-        "node": true,
-        "mocha": true
-    },
-    "extends": "eslint:recommended"
+  "extends": ["standard", "plugin:mocha/recommended"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "globals": {
+    "window": "readonly",
+    "fetch": "readonly",
+    "document": "readonly"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "indent": ["error", 4],
+    "eqeqeq": "off",
+    "no-unused-vars": 1,
+    "quotes": ["error", "single"],
+    "object-curly-spacing": ["warn", "always"],
+    "comma-dangle": ["warn", "never"],
+    "mocha/member-expression": 0,
+    "spaced-comment": ["error", "never", { "markers": ["/"] }],
+    "no-console": ["warn", { "allow": ["warn", "error"]}],
+	"new-cap": ["error", { "newIsCap": false, "capIsNew": false }],
+	"no-control-regex": 0,
+	"no-tabs": ["error", { allowIndentationTabs: true }],
+	"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+    "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "never"
+    }]
+  }
 }
