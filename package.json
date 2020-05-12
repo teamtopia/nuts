@@ -18,7 +18,7 @@
     "lru-diskcache": "1.1.1",
     "octocat": "0.12.1",
     "q": "1.5.0",
-    "request": "2.81.0",
+    "request": "2.88.2",
     "semver": "7.3.2",
     "stream-res": "1.0.1",
     "strip-bom": "4.0.0",
