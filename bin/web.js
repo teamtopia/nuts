@@ -15,8 +15,7 @@ var server = null;
 
 if (process.env.NODE_ENV !== 'production') {
     server = http.createServer({}, app);
-}
-else {
+} else {
     server = https.createServer({
         key: fs.readFileSync(process.env.HTTPS_KEY, 'utf8'),
         cert: fs.readFileSync(process.env.HTTPS_CERT, 'utf8'),
@@ -154,7 +153,6 @@ myNuts.init()
 
             console.log('Listening at http(s)://%s:%s', host, port);
         });
-
     }, function (err) {
         console.log(err.stack || err);
         process.exit(1);
