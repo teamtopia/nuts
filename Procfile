@@ -1,1 +1,1 @@
-web: node bin/web.js
+web: yarn exec node bin/web.js
