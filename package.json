@@ -23,7 +23,7 @@
     "stream-res": "1.0.1",
     "strip-bom": "4.0.0",
     "understudy": "4.1.0",
-    "urljoin.js": "1.0.0",
+    "url-join": "4.0.1",
     "uuid": "8.1.0"
   },
   "devDependencies": {
