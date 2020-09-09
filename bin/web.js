@@ -10,16 +10,21 @@ dotenv.config();
 var fs = require('fs');
 var https = require('https');
 const http = require('http');
+const { catch } = require('q');
 
 var server = null;
 
 
 if (process.env.AIRBRAKE_ID && process.env.AIRBRAKE_KEY) {
-    if (process.env.AIRBRAKE_HOST) {
-        process.env.AIRBRAKE_SERVER = process.env.AIRBRAKE_HOST;
+    try {
+        if (process.env.AIRBRAKE_HOST) {
+            process.env.AIRBRAKE_SERVER = process.env.AIRBRAKE_HOST;
+        }
+        var airbrake = require('airbrake').createClient(process.env.AIRBRAKE_ID, process.env.AIRBRAKE_KEY);
+        airbrake.handleExceptions();
+    } catch (e) {
+        console.log("Initializing airbrake failed", e);
     }
-    var airbrake = require('airbrake').createClient(process.env.AIRBRAKE_ID, process.env.AIRBRAKE_KEY);
-    airbrake.handleExceptions();
 }
 
 if (process.env.NODE_ENV !== 'production') {
