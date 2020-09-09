@@ -13,6 +13,15 @@ const http = require('http');
 
 var server = null;
 
+
+if (process.env.AIRBRAKE_ID && process.env.AIRBRAKE_KEY) {
+    if (process.env.AIRBRAKE_HOST) {
+        process.env.AIRBRAKE_SERVER = process.env.AIRBRAKE_HOST;
+    }
+    var airbrake = require('airbrake').createClient(process.env.AIRBRAKE_ID, process.env.AIRBRAKE_KEY);
+    airbrake.handleExceptions();
+}
+
 if (process.env.NODE_ENV !== 'production') {
     server = http.createServer({}, app);
 } else {
@@ -29,14 +38,6 @@ var apiAuth = {
     username: process.env.API_USERNAME,
     password: process.env.API_PASSWORD
 };
-
-if (process.env.AIRBRAKE_ID && process.env.AIRBRAKE_KEY) {
-    if (process.env.AIRBRAKE_HOST) {
-        process.env.AIRBRAKE_SERVER = process.env.AIRBRAKE_HOST;
-    }
-    var airbrake = require('airbrake').createClient(process.env.AIRBRAKE_ID, process.env.AIRBRAKE_KEY);
-    airbrake.handleExceptions();
-}
 
 var analytics = undefined; //eslint-disable-line no-undef-init
 var downloadEvent = process.env.ANALYTICS_EVENT_DOWNLOAD || 'download';
