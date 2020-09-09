@@ -1,4 +1,3 @@
-console.log("bin/web setting up...");
 try {
     const express = require('express');
     const app = express();
@@ -28,8 +27,18 @@ try {
         }
     }
 
-    // Heroku terminates SSL for us, we only need to support http.
-    server = http.createServer({}, app);
+    // Heroku terminates SSL for us. So only support https if provided an HTTPS_KEY.
+    if (process.env.HTTPS_KEY) {
+        server = https.createServer({
+            key: fs.readFileSync(process.env.HTTPS_KEY, 'utf8'),
+            cert: fs.readFileSync(process.env.HTTPS_CERT, 'utf8'),
+            ca: fs.readFileSync(process.env.HTTPS_CA, 'utf8'),
+            requestCert: true,
+            rejectUnauthorized: false
+        }, app);
+    } else {
+        server = http.createServer({}, app);
+    }
 
     var apiAuth = {
         username: process.env.API_USERNAME,
