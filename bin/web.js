@@ -28,17 +28,8 @@ try {
         }
     }
 
-    if (process.env.NODE_ENV !== 'production') {
-        server = http.createServer({}, app);
-    } else {
-        server = https.createServer({
-            key: fs.readFileSync(process.env.HTTPS_KEY, 'utf8'),
-            cert: fs.readFileSync(process.env.HTTPS_CERT, 'utf8'),
-            ca: fs.readFileSync(process.env.HTTPS_CA, 'utf8'),
-            requestCert: true,
-            rejectUnauthorized: false
-        }, app);
-    }
+    // Heroku terminates SSL for us, we only need to support http.
+    server = http.createServer({}, app);
 
     var apiAuth = {
         username: process.env.API_USERNAME,
