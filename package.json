@@ -14,7 +14,7 @@
     "express-useragent": "^1.0.13",
     "feed": "^4.1.0",
     "github-webhook-handler": "1.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lru-diskcache": "1.1.1",
     "octocat": "0.12.1",
     "q": "1.5.1",
